@@ -1,0 +1,28 @@
+/*Apartments*/
+
+ input .h1 {
+	font-size:44p;
+	color: black;
+						   
+				        }
+				
+ input{
+	 border-radius:12px;
+	 width: 258;
+    height: 35px;
+					 }
+input :focus{
+		outline:none;
+					 }
+
+ /* When moving the mouse over the Add and Remove buttons, add a darker green color */
+ input[type=submit]:hover {
+ background-color: #45a049;}
+  				 
+#apart{
+	    border:1px solid black;
+	    width:60%;
+		height:710px;
+		 
+}
+ 

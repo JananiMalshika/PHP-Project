@@ -1,0 +1,439 @@
+/*Main body*/
+body{
+    background-image:url("../images/bg4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+
+}
+
+/*navigation bar*/
+
+
+.navbar {
+    list-style-type:none;
+    margin-top: 0px;
+    margin-left: 0;
+    margin-right:0;
+    padding: 0px;
+    overflow: hidden;
+    
+    position: fixed; 
+  top:auto; 
+  width: 100%; 
+  
+  background-image:url("../images/headbg2.jpg");
+  z-index: 1;
+
+}
+
+ul.navbar li{
+    float: left;
+}
+
+ul.navbar li a{
+    display:block;
+    color:white;
+    text-align: center;
+    padding:20px 16px;
+    text-decoration: none;
+}
+
+ul.navbar li a:hover{
+    background-color: rgba(104, 240, 194, 0.479);
+}
+
+.active {
+  background-color: royalblue;
+}
+
+.navbar-right
+{
+    float: right;
+}
+
+/*Login button*/
+ 
+ .loginbutton {
+  border-radius: 4px;
+  background-color: #262e5f;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+ }
+ 
+
+ .loginbutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.loginbutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.loginbutton:hover span {
+  padding-right: 25px;
+}
+
+.loginbutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+ .search-container button {
+    float: right;
+    padding: 10px 10px;
+    margin-top: 1px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+   
+  }
+  
+  .search-container button:hover {
+    background: #ccc;
+  }
+
+  
+input[type=text]:focus {
+  width: 100%;
+}
+
+ .form{
+
+    text-align: left;
+    
+ }
+    /*Contact page*/
+ .contactMain{
+    float: left;
+    padding: 10px;
+    height:700px;
+    color:rgb(5, 0, 0);
+   
+
+}.contactTable{
+
+
+  border-radius: 5px;
+   padding: 20px;
+  
+  width: 90%;
+  
+    
+}
+
+
+
+.Right1{
+    width:40%;
+    
+}
+
+.Left1{
+    width:60%
+}
+
+
+/* Homepage Featured Property*/
+
+
+.container {
+  position: relative;
+  width: 85%;
+}
+
+.image {
+  display: block;
+ 
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #1528d19f;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+/* Homepage slideshow*/
+
+.sliderhome{
+  width: 1000px;
+  height: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  
+}
+
+.slideshome{
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slideshome input{
+  display: none;
+}
+
+.slidehome{
+  width: 20%;
+  transition: 2s;
+}
+
+.slidehome img{
+  width: 800px;
+  height: 500px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid #20021c;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #030a04;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div{
+  border: 2px solid #000000;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: #010a0a;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: #000b0c;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: #000707;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: #000a0a;
+}
+
+/*LandsAdmin Page*/
+
+.landform{
+
+
+  border-radius: 5px;
+   padding: 20px;
+  background: rgba(250, 250, 250, 0.185);
+  width: 50%;
+  
+  
+    
+}
+
+input[type=text], select, textarea {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  
+}
+
+.landbutton {
+  background-color: #90eb1aa6; 
+ 
+  color: rgb(0, 0, 0);
+  padding: 16px 32px;
+  text-align: center;
+ 
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+ 
+  cursor: pointer;
+}
+
+.buttonred {
+  background-color: rgb(228, 52, 52); 
+  
+ 
+}
+
+/*News Page*/
+
+.newsform{
+
+
+  border-radius: 5px;
+   padding: 20px;
+  background: rgba(250, 250, 250, 0.185);
+  width: 100%;
+  align-items: left;
+  
+    
+}
+
+.newsimage {
+  position: relative;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+
+
+.newsimage .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(127, 236, 236, 0.733); /* Black background with 0.5 opacity */
+  color: #000000;
+  width: 760px;
+  padding: 20px;
+}
+
+/* Apartment page button*/
+
+.apartmentbutton {
+  background-color: #8ef00fa6; 
+ 
+  color: rgb(0, 0, 0);
+  padding: 16px 32px;
+  text-align: center;
+ 
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+ 
+  cursor: pointer;
+}
+
+/*sell button on land page and house page*/
+.sellbtn {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.sellbtn img {
+  width: 100%;
+  height: auto;
+}
+
+.sellbtn .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgb(33, 228, 163);
+  color: rgb(10, 17, 29);
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.sellbtn .btn:hover {
+  background-color:lightgreen;
+}
+
+footer{
+  background-image:url("../images/headbg2.jpg");
+  box-sizing: border-box;
+  margin-top: auto;
+  width: 100%;   
+  padding:20px;
+}
+
